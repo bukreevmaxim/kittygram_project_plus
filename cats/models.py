@@ -1,5 +1,13 @@
 from django.db import models
 
+CHOICES = (
+        ('Gray', 'Серый'),
+        ('Black', 'Чёрный'),
+        ('White', 'Белый'),
+        ('Ginger', 'Рыжий'),
+        ('Mixed', 'Смешанный'),
+    )
+
 class Achievement(models.Model):
     name = models.CharField(max_length=64)
 
