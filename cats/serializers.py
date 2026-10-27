@@ -3,6 +3,14 @@ import webcolors
 from .models import Cat, Owner, Achievement, AchievementCat, CHOICES
 import datetime as dt
 
+# from djoser.serializers import UserSerializer
+# from django.contrib.auth import get_user_model
+
+# class CustomUserSerializer(UserSerializer):
+#     class Meta:
+#         model = get_user_model()
+#         fields = ('email', 'id', 'username', 'first_name', 'last_name')
+
 class Hex2NameColor(serializers.Field):
     # При чтении данных ничего не меняем - просто возвращаем как есть
     def to_representation(self, value):
